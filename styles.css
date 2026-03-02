@@ -1,0 +1,64 @@
+.navbar {
+    background-color: #4CAF50;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #45a049;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.about, .services, .portfolio, .testimonials, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about { background-color: #f4f4f4; }
+.services { background-color: #e2e2e2; }
+.portfolio { background-color: #d9d9d9; }
+.testimonials { background-color: #cfcfcf; }
+.contact { background-color: #bfbfbf; }
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    animation: fadeIn 1.5s;
+}
